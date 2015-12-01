@@ -1,7 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Пользователь
- * Date: 01.12.2015
- * Time: 13:59
- */
+//КОНТРОЛЛЕР формы
+require __DIR__ . '/models/news.php';
+
+if (!isset($_GET['id'])) {
+    header('Location: index.php');
+    exit;
+}
+
+if (isset($_GET['id'])) {
+    $get = $_GET['id'];
+    $show = Selection_id($get);
+}
+include __DIR__ . '/views/show_news.php';
+?>
