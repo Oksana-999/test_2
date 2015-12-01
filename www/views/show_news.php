@@ -1,7 +1,22 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Пользователь
- * Date: 01.12.2015
- * Time: 14:02
- */
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Новостная лента</title>
+</head>
+<body>
+
+<?php foreach ($show as $s ):?>
+    <div align="center">
+        <div style="max-width: 700px; background: #ffccff; padding-left: 25px; padding-right: 25px; -moz-box-shadow: 0.4em 0.4em 0.4em -0.1em rgba(0,0,6,0.5);
+-webkit-box-shadow: 0.4em 0.4em 0.4em -0.1em rgba(0,0,6,0.5);
+box-shadow: 0.4em 0.4em 0.4em -0.1em rgba(0,0,6,0.5);">
+            <h3><?php echo $s['text'];?></h3>
+        </div>
+    </div>
+<?php endforeach;?>
+
+<h3><a href="../index.php">На главную</a></h3>
+
+</body>
+</html>
