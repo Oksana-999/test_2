@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Пользователь
- * Date: 01.12.2015
- * Time: 13:56
- */
+require_once __DIR__. "/models/news.php";
+$items = getAll();
+
+include __DIR__ . '/views/index.php';
+
+?>
