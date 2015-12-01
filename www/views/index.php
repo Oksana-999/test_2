@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -22,7 +23,6 @@
                         полностью >>>>> </a></td>
             </tr>
         <?php endforeach; ?>
-        </tr>
     </table>
 </center>
 <br /><br />
